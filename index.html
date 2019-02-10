@@ -1,0 +1,94 @@
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 600px;
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+
+    .parentBox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100px;
+    }
+
+    .childBox {
+        width: 20px;
+        height: 0;
+    }
+
+    .childBox:nth-of-type(1) {
+        animation: tall 1s ease 0s infinite alternate;
+        background-color: red;
+    }
+
+    .childBox:nth-of-type(2) {
+        animation: tall 1s ease .1s infinite alternate;
+        background-color: yellowgreen;
+    }
+
+    .childBox:nth-of-type(3) {
+        animation: tall 1s ease .2s infinite alternate;
+        background-color: orange;
+    }
+
+    .childBox:nth-of-type(4) {
+        animation: tall 1s ease .3s infinite alternate;
+        background-color: orchid;
+    }
+
+    .childBox:nth-of-type(5) {
+        animation: tall 1s ease .4s infinite alternate;
+        background-color: plum;
+    }
+
+    .childBox:nth-of-type(6) {
+        animation: tall 1s ease .5s infinite alternate;
+        background-color: purple;
+    }
+
+    .childBox:nth-of-type(7) {
+        animation: tall 1s ease .6s infinite alternate;
+        background-color: blueviolet;
+    }
+
+    .childBox:nth-of-type(8) {
+        animation: tall 1s ease .7s infinite alternate;
+        background-color: blue;
+    }
+
+    .childBox:nth-of-type(9) {
+        animation: tall 1s ease .8s infinite alternate;
+        background-color: cornflowerblue;
+    }
+
+    @keyframes tall {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 100px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="parentBox">
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+        <span class="childBox"></span>
+    </div>
+    <p>color bar</p>
+</div>
